@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ExpenseEntryFragment">
+
+    <fragment
+        android:id="@+id/ExpenseEntryFragment"
+        android:name="com.example.smartexpensetracker.ui.expenseentry.ExpenseEntryFragment"
+        android:label="Add Expense">
+        <action
+            android:id="@+id/action_to_list"
+            app:destination="@id/ExpenseListFragment" />
+        <action
+            android:id="@+id/action_to_report"
+            app:destination="@id/ExpenseReportFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ExpenseListFragment"
+        android:name="com.example.smartexpensetracker.ui.expenselist.ExpenseListFragment"
+        android:label="Expenses">
+        <action
+            android:id="@+id/action_list_to_entry"
+            app:destination="@id/ExpenseEntryFragment" />
+        <action
+            android:id="@+id/action_list_to_report"
+            app:destination="@id/ExpenseReportFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ExpenseReportFragment"
+        android:name="com.example.smartexpensetracker.ui.expensereport.ExpenseReportFragment"
+        android:label="Reports">
+        <action
+            android:id="@+id/action_report_to_entry"
+            app:destination="@id/ExpenseEntryFragment" />
+        <action
+            android:id="@+id/action_report_to_list"
+            app:destination="@id/ExpenseListFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,9 @@
+<resources>
+    <style name="Base.Theme.SmartExpenseTracker" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Optional -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.SmartExpenseTracker" parent="Base.Theme.SmartExpenseTracker"/>
+</resources>

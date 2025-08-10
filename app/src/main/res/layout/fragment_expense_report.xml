@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Last 7 Days (Mocked)"/>
+
+        <TextView
+            android:id="@+id/tvDailyTotals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daily Totals\n-"/>
+
+        <TextView
+            android:id="@+id/tvCategoryTotals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category Totals\n-"/>
+
+        <Button
+            android:id="@+id/btnShareCsv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share CSV (Mock)"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnGoEntry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Add"/>
+            <Button
+                android:id="@+id/btnGoList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="List"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

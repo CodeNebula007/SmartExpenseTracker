@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SmartExpenseTracker</string>
+    <string-array name="categories">
+        <item>Staff</item>
+        <item>Travel</item>
+        <item>Food</item>
+        <item>Utility</item>
+    </string-array>
+</resources>
